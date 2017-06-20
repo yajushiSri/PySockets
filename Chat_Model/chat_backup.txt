@@ -1,0 +1,1 @@
+Client node's message:Hello. This is a demo file.Server node's message:What for?Client node's message:To save our chat in the 'chat_backup' text file.Server node's message:Woah.Does this mean no privacy?Client node's message:Yes, it does. But this is fun anyway.Server node's message:Whatever. Bye.
