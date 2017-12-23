@@ -1,2 +1,5 @@
-# PySockets
-This repository contains various examples of socket programming in python. A network socket is an internal endpoint for sending or receiving data at a single node in a computer network.
+# Network Programming 
+This repository contains various examples of network programming in python.
+A socket is an internal endpoint for sending or receiving data at a single node in a computer network. A socket is an instance of the socket class from the socket module. It's instantiated with upto 3 parameters: an address family (defaulting to socket.AF_INET), whether it's a stream (socket.SOCK_STREAM) or datagram (socket.SOCK_DGRAM) socket,and a protocol.
+A server socket uses its bind method followed by a call to listen to listen to a given address. A client socket can then connect to the server using its connect method with the same address as used in bind. 
+In case of blocking or synchronous network programming, once a server socket is listening, it can start accepting clients. This is done using accept method. This method will block (wait) until a client connects, and then it will return a tuple of the form (client, address). The server deals with the client as it sees fit and starts waiting for another connection. This is done in an infinite loop. 
