@@ -14,7 +14,7 @@ while True:
 	#This makes a file object and the filename is chat_backup.txt whose mode is set to append and write.
 		file_handle.write("Client node's message:")
 		file_handle.write(data[0])
-		msg = raw_input("Enter message:")
+		msg = input("Enter message:")
 		file_handle.write("Server node's message:")
 		file_handle.write(msg)
 		soc_var.sendto(msg,data[1])
